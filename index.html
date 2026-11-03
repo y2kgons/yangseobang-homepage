@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>양서방 고추장화로 | 대구 달서 수제 고추장삼겹</title>
+<meta name="description" content="대구 달서구 장기로 93, 7년째 직접 재우는 수제 고추장삼겹. 20가지 재료 비법양념, 24시간 숙성. 매장 식사와 집에서 굽는 밀키트(500g·1kg).">
+<meta property="og:title" content="양서방 고추장화로">
+<meta property="og:description" content="20가지 재료 · 24시간 숙성 수제 고추장삼겹. 이제 집에서도 밀키트로.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+@font-face{font-family:D;src:url(fonts/dangdanghae.woff) format("woff");font-display:swap}
+:root{--red:#C8102E;--ink:#1E1B1B;--cream:#F4EFE4;--cream2:#FBF7F0;--yel:#FFC33D;--mute:#6B625C;--line:#E6DDD0}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Pretendard,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;padding-bottom:68px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.eyebrow{font-size:13px;letter-spacing:2px;font-weight:800;color:var(--red)}
+h2{font-family:D,Pretendard,sans-serif;font-weight:normal;font-size:clamp(30px,6vw,46px);line-height:1.2;margin:8px 0 14px}
+h2 .r{color:var(--red)}
+.lead{color:var(--mute);font-size:16px}
+section{padding:72px 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:52px;padding:0 22px;border-radius:26px;font-weight:800;font-size:16px}
+.btn.red{background:var(--red);color:#fff}
+.btn.line{border:2px solid currentColor}
+.btn.soon{opacity:.55;pointer-events:none}
+
+/* hero */
+.hero{position:relative;min-height:92vh;color:#fff;display:flex;align-items:flex-end;background:#1E1B1B url(images/hero.jpg) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(to top,#1E1B1B 22%,rgba(30,27,27,.35) 70%,rgba(30,27,27,.2))}
+.hero .wrap{position:relative;padding-bottom:56px;width:100%}
+.hero .logo{width:min(300px,70vw);margin-bottom:22px}
+.hero h1{font-family:D,Pretendard,sans-serif;font-weight:normal;font-size:clamp(36px,8vw,64px);line-height:1.15}
+.hero h1 em{font-style:normal;color:var(--yel)}
+.hero p{color:#E9DFD2;margin-top:12px;font-size:17px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+
+/* numbers */
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+.nums div{background:var(--cream2);border-radius:16px;padding:22px 10px;text-align:center}
+.nums b{display:block;font-family:D,sans-serif;font-weight:normal;font-size:44px;color:var(--red);line-height:1}
+.nums span{font-weight:800;font-size:15px}
+.nums small{display:block;color:var(--mute);font-size:13px;margin-top:4px}
+.story{display:grid;gap:28px;align-items:center}
+.story img{border-radius:18px}
+
+/* mealkit */
+.kit{background:var(--ink);color:#fff}
+.kit .lead{color:#D9CFC2}
+.kit-grid{display:grid;gap:26px;margin-top:30px}
+.kit-grid .ph{border-radius:18px;overflow:hidden}
+.opts{display:flex;gap:12px;margin:22px 0}
+.opts div{flex:1;border:2px solid #4a4240;border-radius:16px;padding:16px;text-align:center}
+.opts b{display:block;font-family:D,sans-serif;font-weight:normal;font-size:40px;color:var(--yel);line-height:1.1}
+.opts span{color:#D9CFC2;font-size:14px}
+.kit ul{list-style:none;color:#E9DFD2;font-size:15px}
+.kit li{padding:8px 0;border-bottom:1px solid #3a3433}
+.kit li b{color:#fff;margin-right:6px}
+.kit .sticker{max-width:420px;margin:26px auto 0;filter:drop-shadow(0 12px 22px rgba(0,0,0,.5))}
+.kit .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+
+/* cook */
+.cook{background:var(--cream)}
+.steps{display:grid;gap:12px;margin-top:26px}
+.step{display:flex;gap:16px;align-items:center;background:#fff;border-radius:16px;padding:18px 20px}
+.step b{font-family:D,sans-serif;font-weight:normal;font-size:40px;color:var(--red);width:40px;text-align:center}
+.step strong{display:block;font-size:17px}
+.step span{color:var(--mute);font-size:14px}
+.tip{margin-top:16px;background:var(--ink);color:#fff;border-radius:14px;padding:16px 20px;font-size:15px}
+.tip em{font-style:normal;color:var(--yel);font-weight:800}
+
+/* menu */
+.menu{display:grid;gap:30px;margin-top:30px}
+.menu h3{font-size:18px;font-weight:800;border-bottom:3px solid var(--ink);padding-bottom:8px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline}
+.menu h3 small{font-size:13px;color:var(--mute);font-weight:500}
+.menu dl{display:grid;grid-template-columns:1fr auto;font-size:15px}
+.menu dt,.menu dd{padding:10px 0;border-bottom:1px dashed var(--line)}
+.menu dd{font-weight:800;text-align:right}
+.tag{display:inline-block;font-size:11px;font-weight:800;color:#fff;background:var(--red);border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:2px}
+.tag.y{background:#B08968}
+.menu .ph{border-radius:16px;overflow:hidden;margin-bottom:14px;aspect-ratio:16/10}
+.menu .ph img{width:100%;height:100%;object-fit:cover}
+.note{margin-top:20px;background:var(--cream2);border-radius:12px;padding:14px 18px;font-size:14px;color:var(--mute)}
+.note b{color:var(--red)}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:26px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px}
+
+/* visit */
+.visit{background:var(--cream2)}
+.info{display:grid;gap:10px;margin-top:24px;font-size:16px}
+.info div{display:flex;gap:14px;background:#fff;border-radius:14px;padding:16px 18px}
+.info b{min-width:72px;color:var(--red)}
+.visit .cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+
+footer{background:var(--ink);color:#9c9188;font-size:13px;padding:36px 0 30px;line-height:1.8}
+footer img{width:160px;margin-bottom:14px}
+
+/* bottom bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1fr 1fr 1.3fr;background:#fff;border-top:1px solid var(--line);height:64px}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:13px;font-weight:800}
+.bar a.main{background:var(--red);color:#fff;font-size:15px}
+.bar svg{width:20px;height:20px;margin-bottom:2px}
+
+@media(min-width:820px){
+  body{padding-bottom:0}.bar{display:none}
+  .story{grid-template-columns:1fr 1fr}
+  .kit-grid{grid-template-columns:1fr 1fr;align-items:center}
+  .menu{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:repeat(4,1fr)}
+  .info{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <img class="logo" src="images/logo_white.png" alt="양서방 고추장화로">
+    <h1>20가지 재료 · <em>24시간</em> 숙성<br>수제 고추장삼겹</h1>
+    <p>대구 달서성당 본점에서 7년째, 매일 직접 재웁니다.</p>
+    <div class="cta">
+      <a class="btn red" href="#mealkit">집에서 굽는 밀키트</a>
+      <a class="btn line" href="#visit">매장 오시는 길</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap story">
+    <div>
+      <p class="eyebrow">OUR STORY</p>
+      <h2>7년 노하우,<br><span class="r">변함없는 맛</span></h2>
+      <p class="lead">고추장, 과일, 마늘 등 20가지 재료로 만든 양념에 두툼한 국내산 삼겹살을 손으로 버무려 하루를 재웁니다. 고추장삼겹은 매장에서 초벌해서 드립니다.</p>
+      <div class="nums">
+        <div><b>20</b><span>가지 재료</span><small>비법 양념</small></div>
+        <div><b>24</b><span>시간 숙성</span><small>결까지 배는 맛</small></div>
+        <div><b>7</b><span>년 노하우</span><small>달서성당 본점</small></div>
+      </div>
+    </div>
+    <img src="images/owner.jpg" alt="양서방 고추장화로 사장님" loading="lazy">
+  </div>
+</section>
+
+<section class="kit" id="mealkit">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--yel)">MEAL KIT</p>
+    <h2>매장 그 양념 그대로,<br>이제 <span style="color:var(--yel)">집 식탁</span>으로</h2>
+    <p class="lead">양념에 재운 고추장삼겹살을 투명 진공팩에 담아 아이스박스로 보내드립니다.</p>
+    <div class="kit-grid">
+      <div class="ph"><img src="images/mealkit.jpg" alt="양서방 고추장삼겹 밀키트 연출 사진" loading="lazy"></div>
+      <div>
+        <div class="opts">
+          <div><b>500g</b><span>2인분</span></div>
+          <div><b>1kg</b><span>4인분</span></div>
+        </div>
+        <ul>
+          <li><b>원료</b>국내산 돼지 삼겹살 80% + 수제 고추장 양념</li>
+          <li><b>포장</b>투명 진공팩 → 아이스박스 + 아이스팩</li>
+          <li><b>보관</b>냉장 0~5℃, 오래 두실 땐 냉동</li>
+          <li><b>구성</b>고추장삼겹살 단품 (쌈채소·쌈장 별도)</li>
+        </ul>
+        <div class="cta">
+          <a class="btn red soon" href="#" aria-disabled="true">스마트스토어 주문 (준비 중)</a>
+        </div>
+      </div>
+    </div>
+    <img class="sticker" src="images/sticker.png" alt="밀키트 진공팩 앞면 스티커" loading="lazy">
+  </div>
+</section>
+
+<section class="cook">
+  <div class="wrap">
+    <p class="eyebrow">HOW TO COOK</p>
+    <h2>굽는 법, <span class="r">딱 3단계</span></h2>
+    <p class="lead">매장 벽에 붙은 그대로. 뒤집어 주고, 또 뒤집어 주고, 자꾸 뒤집어 주세요.</p>
+    <div class="steps">
+      <div class="step"><b>1</b><div><strong>팬을 중불로 달군다</strong><span>기름은 두르지 않아도 됩니다.</span></div></div>
+      <div class="step"><b>2</b><div><strong>자주 뒤집는다</strong><span>한 면 1분 30초씩, 양념이 눌어붙기 전에.</span></div></div>
+      <div class="step"><b>3</b><div><strong>가장자리가 바삭하면 완성</strong><span>남은 양념에 밥 볶으면 끝.</span></div></div>
+    </div>
+    <p class="tip">에어프라이어 <em>180℃ 12분</em>, 중간에 한 번 뒤집기 · 숯불·그릴은 <em>약불</em>에서</p>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <p class="eyebrow">MENU</p>
+    <h2>매장 <span class="r">메뉴</span></h2>
+    <div class="menu">
+      <div>
+        <div class="ph"><img src="images/grill.jpg" alt="참숯 화로에서 굽는 고추장삼겹" loading="lazy"></div>
+        <h3>고기 <small>단품 고기는 3인분부터</small></h3>
+        <dl>
+          <dt><span class="tag">대표</span>참숯 초벌 고추장 삼겹살 150g</dt><dd>11,500</dd>
+          <dt>달큰한 간장 목살구이 150g</dt><dd>11,500</dd>
+          <dt>참숯 풍미 갈비살 100g</dt><dd>14,800</dd>
+          <dt><span class="tag y">추천</span>섞어 갈비살 100g</dt><dd>18,800</dd>
+          <dt>특 꽃갈비살 100g</dt><dd>22,800</dd>
+          <dt>안창살 100g (예약제)</dt><dd>28,800</dd>
+          <dt><span class="tag">인기</span>마늘듬뿍 양념갈비살 100g</dt><dd>16,800</dd>
+        </dl>
+      </div>
+      <div>
+        <div class="ph"><img src="images/side.jpg" alt="양서방 촌 돼지찌개" loading="lazy"></div>
+        <h3>사이드 <small>고기 먹고 마무리</small></h3>
+        <dl>
+          <dt>양서방 촌 돼지찌개 (2인 / 4인)</dt><dd>12,000 / 25,000</dd>
+          <dt>시원한 열무 냉국수</dt><dd>7,000</dd>
+          <dt>고추장물에 반한 양푼밥</dt><dd>6,000</dd>
+          <dt>고기 뒤엔 된장술밥</dt><dd>5,000</dd>
+          <dt>얼큰하게 풀라면</dt><dd>5,000</dd>
+          <dt>밥 부르는 된장찌개</dt><dd>3,000</dd>
+          <dt>공기밥</dt><dd>1,000</dd>
+          <dt>소주 · 맥주 / 음료</dt><dd>5,000 / 2,000</dd>
+        </dl>
+      </div>
+    </div>
+    <p class="note"><b>고추장삼겹살은 초벌해서 드립니다.</b> 일부 품목은 조기 소진될 수 있습니다.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow">STORE</p>
+    <h2>참숯 <span class="r">화로</span> 앞에서</h2>
+    <div class="gallery">
+      <img src="images/sign.jpg" alt="양서방 고추장화로 간판" loading="lazy">
+      <img src="images/inside.jpg" alt="매장 내부" loading="lazy">
+      <img src="images/tongs.jpg" alt="불꽃 위 고추장삼겹" loading="lazy">
+      <img src="images/ssam.jpg" alt="쌈무에 올린 고추장삼겹 한 점" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap">
+    <p class="eyebrow">VISIT</p>
+    <h2>오시는 <span class="r">길</span></h2>
+    <div class="info">
+      <div><b>주소</b><span>대구광역시 달서구 장기로 93, 1층</span></div>
+      <div><b>영업</b><span>점심 11:30 · 저녁 17:00<br>넷째 일요일 휴무</span></div>
+      <div><b>전화</b><a href="tel:0534251345">053-425-1345</a></div>
+      <div><b>주문</b><span>고기 단품은 3인분부터</span></div>
+    </div>
+    <div class="cta">
+      <a class="btn red" href="https://map.naver.com/p/search/%EC%96%91%EC%84%9C%EB%B0%A9%EA%B3%A0%EC%B6%94%EC%9E%A5%ED%99%94%EB%A1%9C" target="_blank" rel="noopener">네이버 지도로 길찾기</a>
+      <a class="btn line soon" href="#" aria-disabled="true">배달의민족 (입점 준비 중)</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="images/logo_white.png" alt="양서방 고추장화로">
+    <p>양서방고추장화로 · 대표 구연모 · 사업자등록번호 441-28-01596</p>
+    <p>대구광역시 달서구 장기로 93, 1층 · T. 053-425-1345</p>
+    <p>© 양서방 고추장화로</p>
+  </div>
+</footer>
+
+<nav class="bar" aria-label="빠른 메뉴">
+  <a href="tel:0534251345"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>전화</a>
+  <a href="https://map.naver.com/p/search/%EC%96%91%EC%84%9C%EB%B0%A9%EA%B3%A0%EC%B6%94%EC%9E%A5%ED%99%94%EB%A1%9C" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>길찾기</a>
+  <a class="main" href="#mealkit">밀키트 주문</a>
+</nav>
+
+</body>
+</html>
